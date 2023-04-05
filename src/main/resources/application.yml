@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: ''
+    url: jdbc:h2:file:/~/enrollment
+    username: sa
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+jwt:
+  secret: 7JWI64WV7ZWY7IS47JqULiDsp4Dsm5DsnpAg7J207KCV7LCsIOyeheuLiOuLpC4g7J2066CH6rKMIOyggOugh+qyjCDqtaztmITtlbQg67O07JWY6rOgLCDsnbTqsowg66ee64qUIOqyg+yduOyngCDslYTri4zsp4Ag7J6YIOuqqOultOqyoOyKteuLiOuLpC4g7ZWY7KeA66eMIOy1nOyEoOydhCDri6TtlbQg6rWs7ZiE7ZW0IOuztOyVmOyKteuLiOuLpC4g65GQ67mE65GQ67ClIOyYpOuRkOq4sCDrsKUsIOq3uOumrOqzoCwg6re466as6rOgLOq3uOumrOqzoA==
+  token-validity-in-seconds: 86400
